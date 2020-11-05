@@ -5,6 +5,48 @@ const findInput = document.querySelector(".find-input")
 const replaceInput = document.querySelector(".replace-input")
 const replaceAllButton = document.querySelector(".replace-all-button")
 
+replaceAllButton.addEventListener('click',function(){
+     console.log(findInput.value);
+     let search = replaceInput.value;
+     console.log(search)
+     let name = findInput.value;
+
+
+     for(let i = 0; i< rowElements.length; i ++){
+         console.log(rowElements[i])
+     
+     let currentRowElement = getCellElements(rowElements[i]) 
+        console.log(currentRowElement)
+
+
+    for(let i = 0; i < currentRowElement.length; i++){
+        console.log(currentRowElement[i].innerHTML)
+
+        let name = findInput.value
+        
+        console.log(name.includes)
+
+        let newname = findInput.innerHTML
+         let result = newname.replace(name,newname)
+        
+
+            
+        
+        
+    }
+   
+    } 
+    
+} 
+     
+     
+      
+)
+
+
+ 
+
+
 // The following variable holds your OUTER ARRAY of row elements.
 // Later you will need an OUTER LOOP to loop over the individual elements within
 // this array.
