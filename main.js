@@ -24,7 +24,7 @@ replaceAllButton.addEventListener('click',function(){
 
         let name = findInput.value
         
-        console.log(name.includes)
+        console.log(name.includes(name))
 
         let newname = findInput.innerHTML
          let result = newname.replace(name,newname)
